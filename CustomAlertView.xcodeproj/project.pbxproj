@@ -14,6 +14,7 @@
 		F64BC6F91B20CF0C0082DFD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64BC6F81B20CF0C0082DFD1 /* Images.xcassets */; };
 		F64BC6FC1B20CF0C0082DFD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64BC6FA1B20CF0C0082DFD1 /* LaunchScreen.xib */; };
 		F64BC7081B20CF0C0082DFD1 /* CustomAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BC7071B20CF0C0082DFD1 /* CustomAlertViewTests.m */; };
+		F64BC7131B20CF210082DFD1 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BC7121B20CF210082DFD1 /* CustomAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F64BC7011B20CF0C0082DFD1 /* CustomAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64BC7061B20CF0C0082DFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64BC7071B20CF0C0082DFD1 /* CustomAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertViewTests.m; sourceTree = "<group>"; };
+		F64BC7111B20CF210082DFD1 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		F64BC7121B20CF210082DFD1 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				F64BC6F01B20CF0C0082DFD1 /* AppDelegate.m */,
 				F64BC6F21B20CF0C0082DFD1 /* ViewController.h */,
 				F64BC6F31B20CF0C0082DFD1 /* ViewController.m */,
+				F64BC7111B20CF210082DFD1 /* CustomAlertView.h */,
+				F64BC7121B20CF210082DFD1 /* CustomAlertView.m */,
 				F64BC6F51B20CF0C0082DFD1 /* Main.storyboard */,
 				F64BC6F81B20CF0C0082DFD1 /* Images.xcassets */,
 				F64BC6FA1B20CF0C0082DFD1 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				F64BC6F41B20CF0C0082DFD1 /* ViewController.m in Sources */,
 				F64BC6F11B20CF0C0082DFD1 /* AppDelegate.m in Sources */,
+				F64BC7131B20CF210082DFD1 /* CustomAlertView.m in Sources */,
 				F64BC6EE1B20CF0C0082DFD1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				F64BC70D1B20CF0C0082DFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F64BC70E1B20CF0C0082DFD1 /* Build configuration list for PBXNativeTarget "CustomAlertViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				F64BC7101B20CF0C0082DFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

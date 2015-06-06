@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+-(IBAction)firstAction:(id)sender;
+-(IBAction)cancelButtonPressed:(id)sender;
+
 
 @end
 
