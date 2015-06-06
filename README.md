@@ -21,7 +21,7 @@ CustomAlertView *alert = [[CustomAlertView alloc] init];
 Then set it up.
 
 ```objectivec
-[alert initWithTitle:@"No Internet!" message:@"You do not have an internet connection. Please connect to the internet and try again." firstButtonText:nil cancelButtonText:@"Okay" withContainer:self];
+[alert initWithTitle:@"No Internet!" message:@"You do not have an internet connection. Please connect to the internet and try again." firstButtonText:@"Try Again" cancelButtonText:@"Okay" withContainer:self];
 ```
 (withContainer takes in a UIViewController as the parameter. Usually, self should suffice)
 
