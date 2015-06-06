@@ -54,12 +54,19 @@ Theme numbers are given at the end of this readme file.
 
 You can customize individual elements too. 
 The layout is very simple. The customAlertBackground UIView is a subview of your View Controller's view.
-The customAlert UIView is the actual alert box which is a subview of customAlertBackground.
-The other customizable elements are
+The customAlert UIView is the actual alert box which is a subview of customAlertBackground. Everything else is a subview of customAlert.
+The customizable elements are
+- UIView customAlertBackground
+- UIView customAlert
 - UILabel customAlertTitle
 - UILabel customAlertMessage
 - UIButton customAlertButton
 - UIButton customAlertButtonCancel.
+
+Example of customizing individual elements:
+```objc
+[alert.customAlert setBackgroundColor:[UIColor redColor]];
+```
 
 I've also included a top-positioned alert.
 To set the position of the CustomAlertView, use
