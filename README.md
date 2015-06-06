@@ -98,3 +98,15 @@ Here's a sample of all the code you'll need to use CustomAlertView:
 
 <h2>Screenshots</h2>
 
+
+<h2>Theme Codes</h2>
+0: White, Green, Gray
+1: Black, Green, Gray
+2: Blue, White, Red
+3: Purple, Gold
+4: Black, White, Red
+5: Green, White,
+
+<h2>Position Codes</h2>
+0: Default (Center of Screen)
+1: Top (Top of Screen)
