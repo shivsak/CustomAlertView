@@ -1,5 +1,10 @@
 # CustomAlertView
 
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/0.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/4.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/2.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/7.png" width="200px" />
+
 <h2>Setup</h2>
 Add the CustomAlertView.h and CustomAlertView.m files into your project.
 Then import the .h file.
@@ -97,16 +102,26 @@ Here's a sample of all the code you'll need to use CustomAlertView:
 ```
 
 <h2>Screenshots</h2>
-
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/0.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/1.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/2.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/3.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/4.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/5.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/6.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/7.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/8.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/9.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/10.png" width="200px" />
 
 <h2>Theme Codes</h2>
-0: White, Green, Gray
-1: Black, Green, Gray
-2: Blue, White, Red
-3: Purple, Gold
-4: Black, White, Red
-5: Green, White,
+- 0: White, Green, Gray
+- 1: Black, Green, Gray
+- 2: Blue, White, Red
+- 3: Purple, Gold
+- 4: Black, White, Red
+- 5: Green, White,
 
 <h2>Position Codes</h2>
-0: Default (Center of Screen)
-1: Top (Top of Screen)
+- 0: Default (Center of Screen)
+- 1: Top (Top of Screen)
