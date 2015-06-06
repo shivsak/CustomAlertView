@@ -36,7 +36,7 @@ And display it:
 [alert.customAlertButtonCancel addTarget:self action:@selector(cancelButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 ```
 
-The code for 'cancelButtonPressed' should be:
+The code for 'cancelButtonPressed' (to get rid of the alert) should be:
 
 ```objc
 -(IBAction)cancelButtonPressed:(id)sender {
@@ -120,8 +120,14 @@ Here's a sample of all the code you'll need to use CustomAlertView:
 - 2: Blue, White, Red
 - 3: Purple, Gold
 - 4: Black, White, Red
-- 5: Green, White,
+- 5: Green, White
 
 <h2>Position Codes</h2>
 - 0: Default (Center of Screen)
 - 1: Top (Top of Screen)
+
+<h2>What I hope to add to version 2.0</h2>
+- Animations for Alerts
+- Default Cancel Button Implementation
+- More Themes and Positions
+- Option for blurred background
