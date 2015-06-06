@@ -1,9 +1,9 @@
 # CustomAlertView
 
-<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/0.png" width="200px" />
-<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/4.png" width="200px" />
-<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/2.png" width="200px" />
-<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/7.png" width="200px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/0.png" width="300px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/4.png" width="300px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/2.png" width="300px" />
+<img src="http://columbia.edu/~ss4757/resources/app-screenshots/CustomAlertView/7.png" width="300px" />
 
 <h2>Setup</h2>
 Add the CustomAlertView.h and CustomAlertView.m files into your project.
