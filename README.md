@@ -138,3 +138,8 @@ Here's a sample of all the code you'll need to use CustomAlertView:
 - Default Cancel Button Implementation
 - More Themes and Positions
 - Option for blurred background
+- Cocoapods support
+- Auto height
+
+Let me know what you think: ss4757@columbia.edu.
+Add issues on GitHub if you find any.
