@@ -11,34 +11,39 @@
 @implementation CustomAlertView
 
 //Initialize
--(void)initWithTitle:(NSString *)titleText message:(NSString *)message firstButtonText:(NSString *)firstButtonTitle cancelButtonText:(NSString *)cancelButtonTitle withContainer:(UIViewController *)container {
+-(instancetype)initWithTitle:(NSString *)titleText message:(NSString *)message firstButtonText:(NSString *)firstButtonTitle cancelButtonText:(NSString *)cancelButtonTitle withSuperView:(UIView *)superview {
     
-    // Initialize Background View and Set Background Color
-    self.customAlertBackground = [[UIView alloc] initWithFrame:container.view.frame];
-    self.customAlertBackground.backgroundColor = [UIColor clearColor];
+    if (self) {
+        // Initialize Background View and Set Background Color
+        self = [[CustomAlertView alloc] initWithFrame:superview.frame];
+        
+        self.customAlertBackground = [[UIView alloc] initWithFrame:superview.frame];
+        self.customAlertBackground.backgroundColor = [UIColor clearColor];
+        
+        // Set Width and Height
+        [self setWidth:0 height:0]; //Will set width and height to 280, 200
+        
+        // Initialize Alert View and Set Background Color
+        self.customAlert = [[UIView alloc] initWithFrame:CGRectMake((superview.frame.size.width-self.width)/2, (superview.frame.size.height-self.height)/2, self.width, self.height)];
+        self.customAlert.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+        self.customAlert.layer.cornerRadius = 8;
+        
+        // Add title label
+        [self initializeTitle:titleText];
+        
+        // Add message label
+        [self initializeMessage:message];
+        
+        // Add Button
+        [self initializeFirstButton:firstButtonTitle];
+        
+        // Add Cancel Button
+        [self initializeCancelButton:cancelButtonTitle];
+        
+        [self showAlert];
+    }
     
-    // Set Width and Height
-    [self setWidth:0 height:0]; //Will set width and height to 280, 200
-    
-    // Initialize Alert View and Set Background Color
-    self.customAlert = [[UIView alloc] initWithFrame:CGRectMake((container.view.frame.size.width-self.width)/2, (container.view.frame.size.height-self.height)/2, self.width, self.height)];
-    self.customAlert.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
-    self.customAlert.layer.cornerRadius = 8;
-    
-    // Add title label
-    [self initializeTitle:titleText];
-    
-    // Add message label
-    [self initializeMessage:message];
-    
-    // Add Button
-    [self initializeFirstButton:firstButtonTitle];
-    
-    // Add Cancel Button
-    [self initializeCancelButton:cancelButtonTitle];
-    
-    
-    [container.view addSubview:self.customAlertBackground];
+    return self;
 }
 
 -(void)initializeTitle:(NSString *)alertTitle {
@@ -86,7 +91,7 @@
     [self.customAlertButtonCancel setTitle:buttonText forState:UIControlStateNormal];
     [self.customAlertButtonCancel.titleLabel setFont:[UIFont fontWithName: @"HelveticaNeue" size: 16.0f]];
     [self.customAlertButtonCancel.titleLabel setTextColor:[UIColor whiteColor]];
-
+    
 }
 
 // Show Custom Alert View
@@ -96,6 +101,7 @@
     [self.customAlert addSubview:self.customAlertMessage];
     [self.customAlert addSubview:self.customAlertButton];
     [self.customAlert addSubview:self.customAlertButtonCancel];
+    [self addSubview:self.customAlertBackground];
 }
 
 -(void)setTheme:(int)theme {

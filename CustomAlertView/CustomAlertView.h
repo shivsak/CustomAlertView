@@ -22,7 +22,7 @@
 @property (nonatomic, retain) UILabel *customAlertTitle;
 @property (nonatomic, retain) UILabel *customAlertMessage;
 
--(void)initWithTitle:(NSString *)titleText message:(NSString *)message firstButtonText:(NSString *)firstButtonTitle cancelButtonText:(NSString *)cancelButtonTitle withContainer:(UIViewController *)container;
+-(instancetype)initWithTitle:(NSString *)titleText message:(NSString *)message firstButtonText:(NSString *)firstButtonTitle cancelButtonText:(NSString *)cancelButtonTitle withSuperView:(UIView *)superview;
 -(void)showAlert;
 
 //Set CustomAlertView's width and height

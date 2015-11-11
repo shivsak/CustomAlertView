@@ -63,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61216BE1BF3E686009E0993 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F64BC7111B20CF210082DFD1 /* CustomAlertView.h */,
+				F64BC7121B20CF210082DFD1 /* CustomAlertView.m */,
+			);
+			name = CustomAlertView;
+			sourceTree = "<group>";
+		};
 		F64BC6DF1B20CF0C0082DFD1 = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +97,7 @@
 				F64BC6F01B20CF0C0082DFD1 /* AppDelegate.m */,
 				F64BC6F21B20CF0C0082DFD1 /* ViewController.h */,
 				F64BC6F31B20CF0C0082DFD1 /* ViewController.m */,
-				F64BC7111B20CF210082DFD1 /* CustomAlertView.h */,
-				F64BC7121B20CF210082DFD1 /* CustomAlertView.m */,
+				F61216BE1BF3E686009E0993 /* CustomAlertView */,
 				F64BC6F51B20CF0C0082DFD1 /* Main.storyboard */,
 				F64BC6F81B20CF0C0082DFD1 /* Images.xcassets */,
 				F64BC6FA1B20CF0C0082DFD1 /* LaunchScreen.xib */,

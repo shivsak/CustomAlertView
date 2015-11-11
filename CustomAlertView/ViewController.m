@@ -20,15 +20,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
     
-    CustomAlertView *alert = [[CustomAlertView alloc] init];
-    [alert initWithTitle:@"No Internet!" message:@"You do not have an internet connection. Please connect to the internet and try again." firstButtonText:nil cancelButtonText:@"Okay" withContainer:self];
+    CustomAlertView *alert = [[CustomAlertView alloc] initWithTitle:@"No Internet!" message:@"You do not have an internet connection. Please connect to the internet and try again." firstButtonText:@"Okay" cancelButtonText:@"Cancel" withSuperView:self.view];
     [alert.customAlertButton addTarget:self action:@selector(firstAction:) forControlEvents:UIControlEventTouchUpInside];
     [alert.customAlertButtonCancel addTarget:self action:@selector(cancelButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
-    [alert setTheme:4];
+    [alert setTheme:1];
     [alert setPosition:0];
     
-    [alert showAlert];
+    [self.view addSubview:alert];
     
 
 }
